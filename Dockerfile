@@ -12,7 +12,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 WORKDIR /usr/src/app
 #COPY Gemfile* ./
 #RUN bundle install
-COPY . .
+COPY app/views/ . 
 
 EXPOSE 80
 
