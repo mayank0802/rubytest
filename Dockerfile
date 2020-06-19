@@ -16,6 +16,6 @@ WORKDIR /usr/src/app
 #RUN bundle install
 COPY . .
 
-EXPOSE 8080 80 3000
+EXPOSE 80
 
 CMD [ "nginx", "-g", "daemon off;" ] 
