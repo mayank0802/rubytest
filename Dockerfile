@@ -12,7 +12,7 @@ RUN apt-get update \
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /usr/src/app
-COPY Gemfile* ./
+#COPY Gemfile* ./
 RUN bundle install
 COPY . .
 
