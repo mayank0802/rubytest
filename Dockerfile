@@ -13,7 +13,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 WORKDIR /usr/src/app
 #COPY Gemfile* ./
-RUN bundle install
+#RUN bundle install
 COPY . .
 
 EXPOSE 8080 80 3000
